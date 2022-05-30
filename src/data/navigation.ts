@@ -63,21 +63,61 @@ const megaMenuDemo: MegamenuItem[] = [
 const demoChildMenus: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/",
-    name: "Online Booking",
+    href: "/listing-flights",
+    name: "Flight booking",
   },
-  // {
-  //   id: ncNanoId(),
-  //   href: "/home-2",
-  //   name: "Real Estate",
-  //   isNew: true,
-  // },
+  {
+    id: ncNanoId(),
+    href: "/listing-car",
+    name: "Car booking",
+    // isNew: true,
+  },
   // {
   //   id: ncNanoId(),
   //   href: "/home-1-header-2",
   //   name: "Home - Header 2",
   //   isNew: true,
   // },
+];
+
+const accomodationsMenu: NavItemType[] = [
+  {
+    id: ncNanoId(),
+    href: "/listing-stay",
+    name: "Hotels",
+  },
+  {
+    id: ncNanoId(),
+    href: "/listing-stay",
+    name: "Resorts",
+    // isNew: true,
+  },
+  {
+    id: ncNanoId(),
+    href: "/listing-stay",
+    name: "Lodges",
+  //   isNew: true,
+  },
+];
+
+const lifestylesMenu: NavItemType[] = [
+  {
+    id: ncNanoId(),
+    href: "/listing-experiences",
+    name: "Restaurants",
+  },
+  {
+    id: ncNanoId(),
+    href: "/listing-experiences",
+    name: "Activities",
+    // isNew: true,
+  },
+  {
+    id: ncNanoId(),
+    href: "/listing-experiences",
+    name: "Theatres",
+  //   isNew: true,
+  },
 ];
 
 const otherPageChildMenus: NavItemType[] = [
@@ -188,11 +228,26 @@ const templatesChildrenMenus: NavItemType[] = [
 export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/listing-flights",
-    name: "Flights listing",
-    isNew: true,
+    href: "#",
+    name: "Transport",
+    type: "dropdown",
+    children: demoChildMenus,
+    // isNew: true,
   },
- 
+  {
+    id: ncNanoId(),
+    href: "#",
+    name: "Accomodations",
+    type: "dropdown",
+    children: accomodationsMenu,
+  },
+  {
+    id: ncNanoId(),
+    href: "#",
+    name: "Lifestyles",
+    type: "dropdown",
+    children: lifestylesMenu,
+  },
   {
     id: ncNanoId(),
     href: "#",
@@ -200,4 +255,5 @@ export const NAVIGATION_DEMO: NavItemType[] = [
     type: "dropdown",
     children: otherPageChildMenus,
   },
+  
 ];

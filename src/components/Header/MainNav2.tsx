@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import Logo from "shared/Logo/Logo";
 import MenuBar from "shared/MenuBar/MenuBar";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
-import LangDropdown from "./LangDropdown";
+// import LangDropdown from "./LangDropdown";
 import NotifyDropdown from "./NotifyDropdown";
 import AvatarDropdown from "./AvatarDropdown";
-import CurrencyDropdown from "./CurrencyDropdown";
+// import CurrencyDropdown from "./CurrencyDropdown";
 import DropdownTravelers from "./DropdownTravelers";
 // import { Link } from "react-router-dom";
 
@@ -30,8 +30,8 @@ const MainNav2: FC<MainNav2Props> = ({ isTop }) => {
         </div>
         <div className="flex-shrink-0 flex items-center justify-end text-neutral-700 dark:text-neutral-100 space-x-1">
           <div className="hidden items-center xl:flex space-x-1">
-            <CurrencyDropdown />
-            <LangDropdown />
+            {/* <CurrencyDropdown />
+            <LangDropdown /> */}
             {/* <Link
               to="/add-listing-1"
               className="

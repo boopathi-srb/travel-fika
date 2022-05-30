@@ -5,8 +5,8 @@ import SearchDropdown from "./SearchDropdown";
 import ButtonPrimary from "shared/Button/ButtonPrimary";
 import MenuBar from "shared/MenuBar/MenuBar";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
-import LangDropdown from "components/Header/LangDropdown";
-import CurrencyDropdown from "components/Header/CurrencyDropdown";
+// import LangDropdown from "components/Header/LangDropdown";
+// import CurrencyDropdown from "components/Header/CurrencyDropdown";
 
 export interface MainNav1Props {
   isTop: boolean;
@@ -23,8 +23,8 @@ const MainNav1: FC<MainNav1Props> = ({ isTop }) => {
         <div className="flex justify-start flex-grow items-center space-x-4 sm:space-x-10 2xl:space-x-14">
           <Logo />
           <Navigation />
-          <LangDropdown/>
-          <CurrencyDropdown/>
+          {/* <LangDropdown/>
+          <CurrencyDropdown/> */}
         </div>
         <div className="flex-shrink-0 flex items-center justify-end text-neutral-700 dark:text-neutral-100 space-x-1">
           <div className="hidden items-center xl:flex space-x-1">
