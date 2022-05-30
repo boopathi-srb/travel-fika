@@ -182,7 +182,7 @@ const langOptions: NavItemType[]=[
 },
 ];
 
-const headerCurrency: NavItemType[]= [
+const currencyOptions: NavItemType[]= [
   {
     id: "EUR",
     name: "EUR",
@@ -312,7 +312,7 @@ export const NAVIGATION_DEMO: NavItemType[] = [
     href: "#",
     name: "Currency",
     type: "dropdown",
-    children: langOptions,
+    children: currencyOptions,
   },
   {
     id: ncNanoId(),
