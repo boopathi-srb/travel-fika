@@ -15,6 +15,7 @@ export interface NavItemType {
   id: string;
   name: string;
   isNew?: boolean;
+  active?: boolean;
   href: string;
   targetBlank?: boolean;
   children?: NavItemType[];

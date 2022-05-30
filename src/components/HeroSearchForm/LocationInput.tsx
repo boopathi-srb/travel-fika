@@ -7,6 +7,7 @@ import { useRef } from "react";
 export interface LocationInputProps {
   defaultValue: string;
   onChange?: (value: string) => void;
+  onClick?: (value: string) => void;
   onInputDone?: (value: string) => void;
   placeHolder?: string;
   desc?: string;
@@ -205,7 +206,7 @@ const LocationInput: FC<LocationInputProps> = ({
             <span className="line-clamp-1">{!!value ? placeHolder : desc}</span>
           </span>
           {value && showPopover && (
-            <ClearDataButton onClick={() => setValue("")} />
+            <ClearDataButton onClick={() => console.log(setValue)} />
           )}
         </div>
       </div>

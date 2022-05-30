@@ -72,12 +72,7 @@ const demoChildMenus: NavItemType[] = [
     name: "Car booking",
     // isNew: true,
   },
-  // {
-  //   id: ncNanoId(),
-  //   href: "/home-1-header-2",
-  //   name: "Home - Header 2",
-  //   isNew: true,
-  // },
+ 
 ];
 
 const accomodationsMenu: NavItemType[] = [
@@ -151,13 +146,70 @@ const otherPageChildMenus: NavItemType[] = [
     href: "/signup",
     name: "Signup",
   },
-  // {
-  //   id: ncNanoId(),
-  //   href: "/subscription",
-  //   name: "Subscription",
-  // },
+ 
+];
+const langOptions: NavItemType[]=[
+{
+  id: "English",
+  name: "English",
+  href: "#",
+  active: true,
+},
+{
+  id: "Vietnamese",
+  name: "Vietnamese",
+  href: "#",
+},
+{
+  id: "Francais",
+  name: "Francais",
+  href: "#",
+},
+{
+  id: "Francais",
+  name: "Francais",
+  href: "#",
+},
+{
+  id: "Francais",
+  name: "Francais",
+  href: "#",
+},
+{
+  id: "Francais",
+  name: "Francais",
+  href: "#",
+},
 ];
 
+const headerCurrency: NavItemType[]= [
+  {
+    id: "EUR",
+    name: "EUR",
+    href: "##",
+    active: true,
+  },
+  {
+    id: "USD",
+    name: "USD",
+    href: "##",
+  },
+  {
+    id: "GBF",
+    name: "GBF",
+    href: "##",
+  },
+  {
+    id: "SAR",
+    name: "SAR",
+    href: "##",
+  },
+  {
+    id: "QAR",
+    name: "QAR",
+    href: "##",
+  },
+];
 const templatesChildrenMenus: NavItemType[] = [
   {
     id: ncNanoId(),
@@ -247,6 +299,20 @@ export const NAVIGATION_DEMO: NavItemType[] = [
     name: "Lifestyles",
     type: "dropdown",
     children: lifestylesMenu,
+  },
+  {
+    id: ncNanoId(),
+    href: "#",
+    name: "Languages",
+    type: "dropdown",
+    children: langOptions,
+  },
+  {
+    id: ncNanoId(),
+    href: "#",
+    name: "Currency",
+    type: "dropdown",
+    children: langOptions,
   },
   {
     id: ncNanoId(),
