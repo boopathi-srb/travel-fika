@@ -7,7 +7,7 @@ import NotifyDropdown from "./NotifyDropdown";
 import AvatarDropdown from "./AvatarDropdown";
 import CurrencyDropdown from "./CurrencyDropdown";
 import DropdownTravelers from "./DropdownTravelers";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export interface MainNav2Props {
   isTop: boolean;
@@ -32,14 +32,14 @@ const MainNav2: FC<MainNav2Props> = ({ isTop }) => {
           <div className="hidden items-center xl:flex space-x-1">
             <CurrencyDropdown />
             <LangDropdown />
-            <Link
+            {/* <Link
               to="/add-listing-1"
               className="
                 text-opacity-90
                 group px-4 py-2 border border-neutral-300 hover:border-neutral-400 dark:border-neutral-700 rounded-full inline-flex items-center text-sm text-gray-700 dark:text-neutral-300 font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
             >
               List your property
-            </Link>
+            </Link> */}
 
             <div></div>
             <SwitchDarkMode />

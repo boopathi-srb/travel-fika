@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { useState } from "react";
-import MainNav2 from "./MainNav2";
+import MainNav1 from "./MainNav1";
 
 export interface HeaderProps {}
 
@@ -38,7 +38,7 @@ const Header: FC<HeaderProps> = () => {
       </Helmet>
 
       {/* NAV */}
-      <MainNav2 isTop={isTop} />
+      <MainNav1 isTop={isTop} />
     </div>
   );
 };

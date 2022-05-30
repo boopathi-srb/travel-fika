@@ -59,7 +59,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
     FocusedInputShape | "dropOffInput" | null
   >(null);
   const [dropOffLocationType, setDropOffLocationType] = useState<
-    "roundTrip" | "oneWay" | ""
+    "roundTrip" | "oneWay" | "multiCity"
   >("roundTrip");
   const [guests, setGuests] = useState(1);
   const [flightClassState, setFlightClassState] = useState("Economy");
@@ -194,6 +194,16 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
           onClick={(e) => setDropOffLocationType("roundTrip")}
         >
           Round-trip
+        </div>
+        <div
+          className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-4 ${
+            dropOffLocationType === "multiCity"
+              ? "bg-black text-white shadow-black/10 shadow-lg"
+              : "border border-neutral-300 dark:border-neutral-700"
+          }`}
+          onClick={(e) => setDropOffLocationType("multiCity")}
+        >
+          Multi-city
         </div>
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-4 ${
