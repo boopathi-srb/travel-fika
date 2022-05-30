@@ -5,7 +5,7 @@ import { Disclosure } from "@headlessui/react";
 import { NavLink } from "react-router-dom";
 import { NavItemType } from "./NavigationItem";
 import { NAVIGATION_DEMO } from "data/navigation";
-import ButtonPrimary from "shared/Button/ButtonPrimary";
+// import ButtonPrimary from "shared/Button/ButtonPrimary";
 import SocialsList from "shared/SocialsList/SocialsList";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import SwitchDarkMode from "shared/SwitchDarkMode/SwitchDarkMode";
@@ -117,8 +117,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
         <Logo />
         <div className="flex flex-col mt-5 text-neutral-700 dark:text-neutral-300 text-sm">
           <span>
-            Discover the most outstanding articles on all topics of life. Write
-            your stories and share them
+           Experience the best travel ever!
           </span>
 
           <div className="flex justify-between items-center mt-4">
@@ -135,11 +134,11 @@ const NavMobile: React.FC<NavMobileProps> = ({
       <ul className="flex flex-col py-6 px-2 space-y-1">
         {data.map(_renderItem)}
       </ul>
-      <div className="flex items-center justify-between py-6 px-5 space-x-4">
+      {/* <div className="flex items-center justify-between py-6 px-5 space-x-4">
         <a href="/#" target="_blank" rel="noopener noreferrer">
           <ButtonPrimary>Get Template</ButtonPrimary>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
