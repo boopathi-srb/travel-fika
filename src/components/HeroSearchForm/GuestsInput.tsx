@@ -3,6 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import NcInputNumber from "components/NcInputNumber/NcInputNumber";
 import { FC } from "react";
 import ClearDataButton from "./ClearDataButton";
+import { ChevronDownIcon } from "@heroicons/react/outline";
 
 export interface GuestsInputProps {
   defaultValue: {
@@ -57,7 +58,8 @@ const GuestsInput: FC<GuestsInputProps> = ({
               open ? "nc-hero-field-focused" : ""
             }`}
           >
-            <div className="text-neutral-300 dark:text-neutral-400">
+            
+            {/* <div className="text-neutral-300 dark:text-neutral-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="nc-icon-field"
@@ -72,14 +74,15 @@ const GuestsInput: FC<GuestsInputProps> = ({
                   d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
                 />
               </svg>
-            </div>
+            </div> */}
             <div className="flex-grow">
-              <span className="block xl:text-lg font-semibold">
-                {totalGuests || ""} Guests
+              <span className="block text-xs font-semibold">
+                {totalGuests || ""} Passengers
               </span>
-              <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-                {totalGuests ? "Guests" : "Add guests"}
-              </span>
+              
+              {/* <span className="block mt-1 text-xs text-neutral-400 leading-none font-light">
+                {totalGuests ? "Passengers" : "Add passengers"}
+              </span> */}
               {!!totalGuests && open && (
                 <ClearDataButton
                   onClick={() => {
@@ -89,7 +92,17 @@ const GuestsInput: FC<GuestsInputProps> = ({
                   }}
                 />
               )}
+              
             </div>
+            <div>
+            <ChevronDownIcon
+                  className={`${
+                    open ? "" : "text-opacity-70"
+                  } ml-2 h-4 w-4 group-hover:text-opacity-80 transition ease-in-out duration-150`}
+                  aria-hidden="true"
+                />
+            </div>
+            
           </Popover.Button>
           <Transition
             as={Fragment}

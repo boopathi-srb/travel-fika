@@ -100,9 +100,9 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
         value={stateTimeRage.startTime}
         onChange={(time) => {
           if (field === "pickUp") {
-            return setStateTimeRage((state) => ({ ...state, startTime: time }));
+            // return setStateTimeRage((state) => ({ ...state, startTime: time }));
           }
-          setStateTimeRage((state) => ({ ...state, endTime: time }));
+          // setStateTimeRage((state) => ({ ...state, endTime: time }));
         }}
         as="div"
         className="relative flex-shrink-0"
