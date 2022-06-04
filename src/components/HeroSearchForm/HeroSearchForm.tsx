@@ -5,17 +5,17 @@ import "react-dates/initialize";
 // import RentalCarSearchForm from "./RentalCarSearchForm";
 import FlightSearchForm from "./FlightSearchForm";
 
-export type SearchTab = "Stays" | "Experiences" | "Cars" | "Flights";
+export type SearchTab = "Round trip" | "Multicity" | "One way" | "Flights";
 
 export interface HeroSearchFormProps {
   className?: string;
   currentTab?: SearchTab;
-  currentPage?: "Stays" | "Experiences" | "Cars" | "Flights";
+  currentPage?: "Round trip" | "Multicity" | "One way" | "Flights";
 }
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
   className = "",
-  currentTab = "Stays",
+  currentTab = "Round trip",
   currentPage,
 }) => {
   const tabs: SearchTab[] = [ "Flights"];
@@ -66,7 +66,7 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
 
   return (
     <div
-      className={`nc-HeroSearchForm w-full max-w-6xl py-5 lg:py-0 ${className}`}
+      className={`nc-HeroSearchForm z-30 w-full max-w-6xl py-5 lg:py-0 ${className}`}
       data-nc-id="HeroSearchForm"
     >
       {renderTab()}

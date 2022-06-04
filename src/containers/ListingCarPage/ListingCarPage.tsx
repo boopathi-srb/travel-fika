@@ -81,8 +81,8 @@ const ListingCarPage: FC<ListingCarPageProps> = ({ className = "" }) => {
         {/* SECTION HERO */}
         <SectionHeroArchivePage
           rightImage={heroRightImage}
-          currentPage="Cars"
-          currentTab="Cars"
+          currentPage="Round trip"
+          currentTab="Round trip"
           listingType={
             <>
               <i className="text-2xl las la-car"></i>
