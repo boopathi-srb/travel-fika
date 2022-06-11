@@ -5,6 +5,7 @@ import RentalCarDatesRangeInput from "./RentalCarDatesRangeInput";
 import ButtonSubmit from "./ButtonSubmit";
 import { FC } from "react";
 import moment from "moment";
+import { Console } from "console";
 
 export interface DateRage {
   startDate: moment.Moment | null;
@@ -56,6 +57,8 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({
       setPickUpInputValue(defaultPickUpInputValue);
       setDropOffInputValue(defaultDropOffInputValue);
     }
+    console.log(defaultPickUpInputValue)
+    console.log(defaultDropOffInputValue)
   }, []);
   //
 

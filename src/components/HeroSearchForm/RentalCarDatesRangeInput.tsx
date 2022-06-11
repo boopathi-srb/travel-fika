@@ -6,8 +6,8 @@ import {
 } from "react-dates";
 import { DateRage } from "./StaySearchForm";
 import { FC } from "react";
-import { Listbox } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/solid";
+// import { Listbox } from "@headlessui/react";
+// import { CheckIcon } from "@heroicons/react/solid";
 import { TimeRage } from "./RentalCarSearchForm";
 import useWindowSize from "hooks/useWindowResize";
 
@@ -45,6 +45,7 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   //
   useEffect(() => {
     setStateDate(defaultDateValue);
+    // console.log(defaultDateValue)
   }, [defaultDateValue]);
 
   useEffect(() => {
@@ -55,6 +56,7 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
     if (onChange) {
       onChange({ stateDate, stateTimeRage });
     }
+    console.log(stateDate)
   }, [stateDate, stateTimeRage]);
 
   const windowSize = useWindowSize();
@@ -62,6 +64,7 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   const handleDateFocusChange = (focus: FocusedInputShape | null) => {
     setFocusedInput(focus);
     onFocusChange && onFocusChange(focus);
+    // console.log(defaultDateValue)
   };
 
   // const renderEditTime = (field: Fields) => {

@@ -49,6 +49,7 @@ const StaySearchForm: FC<StaySearchFormProps> = ({
       setLocationInputValue(defaultLocationValue);
       setGuestValue(defaultGuestValue);
     }
+    console.log(defaultDateRange)
   }, []);
   //
 

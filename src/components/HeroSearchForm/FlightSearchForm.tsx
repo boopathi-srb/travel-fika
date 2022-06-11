@@ -82,6 +82,14 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
       setGuestValue(defaultGuestValue);
       setPickUpInputValue(defaultPickUpInputValue);
       setDropOffInputValue(defaultDropOffInputValue);
+      console.log(defaultGuestValue);
+      console.log(defaultPickUpInputValue);
+      console.log(defaultDropOffInputValue);
+      console.log(dropOffLocationType);
+      console.log(flightClassState);
+
+
+
     }
   }, []);
   //
